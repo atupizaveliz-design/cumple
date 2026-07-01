@@ -1,1 +1,165 @@
-body{}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#1d1238,#311b5b,#4b2b82);
+color:white;
+overflow-x:hidden;
+}
+
+#intro{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:radial-gradient(circle,#4b2b82,#12081f);
+animation:fade 2s;
+}
+
+#intro h1{
+font-size:3rem;
+font-family:'Great Vibes',cursive;
+color:#d9b3ff;
+margin:20px 0;
+}
+
+#intro h2{
+font-size:1.4rem;
+font-weight:300;
+}
+
+#intro p{
+margin-top:10px;
+color:#ddd;
+}
+
+#entrar{
+margin-top:40px;
+padding:15px 40px;
+font-size:20px;
+border:none;
+border-radius:40px;
+background:#a855f7;
+color:white;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 25px #b56cff;
+}
+
+#entrar:hover{
+transform:scale(1.08);
+background:#c084fc;
+}
+
+#pagina{
+display:none;
+animation:fade 2s;
+}
+
+header{
+padding:70px 20px;
+text-align:center;
+}
+
+header h1{
+font-family:'Great Vibes',cursive;
+font-size:3.5rem;
+color:#efc8ff;
+}
+
+header p{
+margin-top:20px;
+font-size:18px;
+color:#ddd;
+}
+
+section{
+width:90%;
+max-width:900px;
+margin:60px auto;
+padding:35px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border-radius:25px;
+box-shadow:0 0 30px rgba(255,255,255,.1);
+}
+
+section h2{
+margin-bottom:25px;
+text-align:center;
+color:#efc8ff;
+}
+
+#tiempo{
+font-size:30px;
+text-align:center;
+font-weight:bold;
+line-height:1.8;
+}
+
+.fotos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+}
+
+.fotos img{
+width:100%;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 0 20px rgba(255,255,255,.2);
+}
+
+.fotos img:hover{
+transform:scale(1.08);
+}
+
+.carta p{
+font-size:18px;
+line-height:2;
+text-align:justify;
+}
+
+.musica{
+text-align:center;
+}
+
+.musica a{
+display:inline-block;
+margin-top:20px;
+padding:15px 35px;
+background:#a855f7;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+footer{
+padding:70px;
+text-align:center;
+font-family:'Great Vibes',cursive;
+font-size:2rem;
+color:#efc8ff;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
