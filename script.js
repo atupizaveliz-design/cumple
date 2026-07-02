@@ -91,3 +91,25 @@ boton.addEventListener("click",()=>{
 setTimeout(escribir,800);
 
 });
+
+const boton = document.getElementById("entrar");
+const intro = document.getElementById("intro");
+const pagina = document.getElementById("pagina");
+
+boton.onclick = () => {
+intro.style.display = "none";
+pagina.style.display = "block";
+};
+
+// 🎵 MÚSICA
+const musica = new Audio("https://www.youtube.com/watch?v=nSDgHBxUbVQ");
+
+const playBtn = document.createElement("button");
+playBtn.innerText = "🎵 Reproducir Photograph";
+playBtn.classList.add("musicaBtn");
+
+document.querySelector(".musica").appendChild(playBtn);
+
+playBtn.onclick = () => {
+window.open("https://www.youtube.com/watch?v=nSDgHBxUbVQ","_blank");
+};
